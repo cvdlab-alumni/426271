@@ -7,9 +7,9 @@ for (var i = 1; i <= 10; i++) {
 			mul+=0;
 		
 		if(j===10)
-			mul+=" ";
+			mul+="\t";
 		else
-			mul+=", ";
+			mul+=",\t";
 	};
 	console.log(mul);
 };
