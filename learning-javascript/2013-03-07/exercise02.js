@@ -1,17 +1,19 @@
 function identity(n) {
+	var iden="";
 	for (var i = 1; i <= n; i++) {
-		var mul="";
 		for (var j = 1; j <= n; j++) {
-			if(i===j)
-				mul+=1;
+			if(i===j) 
+				iden+=1;
+			else 
+				iden+=0;
+			
+			if(j===n)
+				iden+="\t";
 			else
-				mul+=0;
-		
-			if(j===10)
-				mul+="\t";
-			else
-				mul+=",\t";
+				iden+=",\t";
+
 		}
-		console.log(mul);
+		iden+="\n";
 	}
+	return iden;
 }
