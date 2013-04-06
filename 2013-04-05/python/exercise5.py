@@ -1,5 +1,4 @@
 #realize stairs
-
 step2D = MKPOL([[[0,0],[0, 0.56],[0.6, 0.5],[0.6, 0.28]], [[1,2,3,4]], None])
 
 step3D = PROD([step2D, Q(2)])
