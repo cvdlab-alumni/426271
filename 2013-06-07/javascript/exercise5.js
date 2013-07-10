@@ -46,11 +46,11 @@ var lake_model = STRUCT([lake, mountainous_terrain]);
 //DRAW(lake_model);
 
 //Creating a tree model
-var domain2D = DOMAIN([[0,2*PI],[0,1]])([70,70]);
+var domain2D = DOMAIN([[0,2*PI],[0,1]])([7,7]);
 
 function full_circle(r, h) {
 
-	var domain = DOMAIN([[0, 2*PI],[0,r]])([70,1]);
+	var domain = DOMAIN([[0, 2*PI],[0,r]])([7,1]);
 	var mapping = function(p) {
 		var a = p[0];
 		var r = p[1];
@@ -145,7 +145,10 @@ function grow_forest(px,py) {
 	return trees;
 }
 
-var forests = STRUCT([grow_forest(10,2)]);
+var forests = STRUCT([grow_forest(10,2),grow_forest(11,2),grow_forest(13,2),grow_forest(14,2),grow_forest(2,2),
+	grow_forest(3,2),grow_forest(4,2),grow_forest(5,2),grow_forest(6,2),grow_forest(7,2),
+	grow_forest(10,3),grow_forest(11,3),grow_forest(13,3),grow_forest(14,3),grow_forest(2,3),
+	grow_forest(3,3),grow_forest(4,3),grow_forest(5,3),grow_forest(6,3),grow_forest(7,3)]);
 
 var coniferous_forest_model = STRUCT([lake_model, forests]);
 
