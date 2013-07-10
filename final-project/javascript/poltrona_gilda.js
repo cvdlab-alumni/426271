@@ -366,7 +366,7 @@ function details3() {
 	var surfaces1 = COLOR(black)(STRUCT([faces_t, surface1, surface2, surface3,
 											surface4, surface5]));
 
-	var pieces = T([0,1,2])([11.65,0.05,5.35])(STRUCT([surfaces1, T([1])([d+distance])(surfaces1)]));
+	var pieces = T([0,1,2])([11.63,0.05,5.35])(STRUCT([surfaces1, T([1])([d+distance])(surfaces1)]));
 
 	return pieces;
 }
